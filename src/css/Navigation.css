@@ -1,0 +1,39 @@
+.navMenu {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@media (max-width: 620px) {
+  .navMenu {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0px;
+  }
+}
+
+.navMenu div {
+    height: 100%;
+  width: 100%;
+    -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.navMenu a {
+  color: var(--main-white-color);
+  text-decoration: none;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  
+  
+}
+
+.navMenu a:hover {
+  background-color: var(--main-black-color);
+}
