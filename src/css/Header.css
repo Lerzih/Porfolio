@@ -1,7 +1,10 @@
 header {
+  width: 100%;
   padding: 10%;
   display: flex;
   gap: 20px;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 620px) {
@@ -9,7 +12,6 @@ header {
     width: -webkit-fill-available;
   }
   header {
-    width: 100%;
     padding: 10%;
     display: flex;
     gap: 20px;
@@ -33,7 +35,8 @@ header {
 }
 
 .titleProfession {
-  text-align: center;
+  color: #fff;
+  text-align: left;
 }
 
 .profile-picture {
