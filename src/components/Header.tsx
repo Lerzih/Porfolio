@@ -1,4 +1,4 @@
-import DNI from "../assets/profile-picture.png";
+import DNI from "../assets/Foto-desarrollador.jpeg";
 import "../css/Header.css";
 
 function Header() {
