@@ -4,19 +4,19 @@ import "../css/Header.css";
 function Header() {
   return (
     
-      <header className="center">
-        <div className="center">
+      <div className="main-section">
+        <div className="">
           <img className="profile-picture" src={DNI} />
         </div>
-        <div className="center">
+        <div className="">
           <div>
-            <h1 className="myName">Alexis Francisco Díaz Fajardo</h1>
+            <h1 className="my-name">Alexis Francisco Díaz Fajardo</h1>
           </div>
           <div>
-            <h2 className="titleProfession">FullStack Developer</h2>
+            <h2 className="title-profession">FullStack Developer</h2>
           </div>
         </div>
-      </header>
+      </div>
     
   );
 }

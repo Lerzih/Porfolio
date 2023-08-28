@@ -1,12 +1,14 @@
-header {
+.main-section {
   width: 100%;
   height: 90vh;
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 30px;
 }
 
 @media (max-width: 710px) {
-  header {
+  .main-section {
     display: flex;
     flex-direction: column;
   }
@@ -17,7 +19,7 @@ header {
   align-items: center;
 }
 
-.myName {
+.my-name {
   color: #fff;
   text-align: center;
   font-family: FiraCode;
@@ -27,7 +29,7 @@ header {
   line-height: normal;
 }
 
-.titleProfession {
+.title-profession {
   color: #fff;
   text-align: center;
 }
