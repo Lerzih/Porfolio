@@ -1,9 +1,18 @@
 import "../css/Navigation.css";
+import { useState } from 'react';
 
 function Navigation() {
+
+  const [isOpen, setIsOpen] = useState(false);
+  
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+    console.log(isOpen + "Holi");
+  };
+
   return (
     <div className="navigation">
-      <div className="burger-menu">
+      <div className="burger-menu" onClick={toggleMenu}>
         <label className="container">
           <input type="checkbox" />
           <div className="checkmark">
@@ -15,22 +24,23 @@ function Navigation() {
       </div>
       <nav className="navMenu">
         <div>
-          <a href="#">About me</a>
+          <a href="#about-me">About me</a>
         </div>
         <div>
-          <a href="#">Skills</a>
+          <a href="#skills">Skills</a>
         </div>
         <div>
-          <a href="#">Experience</a>
+          <a href="#experience">Experience</a>
         </div>
         <div>
-          <a href="#">Projects</a>
+          <a href="#projects">Projects</a>
         </div>
         <div>
-          <a href="#">Contact</a>
+          <a href="#contact">Contact</a>
         </div>
       </nav>
     </div>
+    
   );
 }
 
