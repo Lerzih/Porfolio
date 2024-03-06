@@ -1,0 +1,10 @@
+.page-divider {
+  display: flex;
+  height: auto;
+}
+
+.page-divider > svg {
+  fill: var(--main-color);
+  width: 100%;
+  transform: rotate(180deg);
+}

@@ -6,6 +6,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  background-color: var(--main-color);
 }
 
 @media (max-width: 620px) {
@@ -40,8 +41,12 @@
   padding: 1em;
 }
 
-.navMenu a:hover {
-  background-color: var(--main-black-color);
+#about-me {
+  scroll-behavior: smooth
+}
+
+.navMenu a::after {
+  scroll-behavior: smooth
 }
 
 /* Burger menu */
@@ -69,7 +74,7 @@
   cursor: pointer;
   font-size: 20px;
   margin-right: 20px;
-  padding: 10px;
+  /* padding: 10px; */
   background-color: var(--main-color);
   filter: drop-shadow(0px 10px 7px rgba(0, 0, 0, 0.25));
   border: 1px solid var(--main-white-color);
